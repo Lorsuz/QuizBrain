@@ -1,238 +1,115 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/* outline: 1px solid #000; */
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-	padding-top: 50px;
-	padding-bottom: 20px;
-	font-family: 'Ubuntu', sans-serif;
-	background: #353535;
-	color: #FFF;
+	background: url('../images/fundo2.jpg') no-repeat center;
+	background-size: cover;
 }
 
-.jumbotron h1 {
-	color: #353535;
+main {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
 }
 
-span.icon {
-	width: 425px;
-	height: 85px;
+#aside-1 {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+#aside-1 img {
+	width: 400px;
+	height: 400px;
+}
+
+#aside-2 {
+	width: 50%;
+	display: flex;
+	align-content: center;
+}
+
+section {
+	width: 90%;
+	height: 400px;
+	padding: 20px;
+	margin-top: 120px;
+}
+
+section nav {
+	display: flex;
+	justify-content: end;
+	margin-bottom: 30px;
+	margin-left: auto;
+	justify-content: space-around;
+}
+
+section nav a {
+	padding: 5px;
+	font-size: 18px;
+	text-decoration: none;
+	color: rgb(45, 131, 174);
+}
+
+section nav a:hover {
+	color: rgb(0, 0, 0);
+}
+
+section nav a.active {
+	color: blue;
+}
+
+section div#tittle {
+	margin-bottom: 40px;
+}
+
+section div#tittle h1 {
+	color: rgb(62, 41, 200);
+	text-align: center;
+	font-size: 4rem;
+	margin-bottom: 15px;
+}
+
+section div#tittle p {
+	font-size: 20px;
+	text-align: center;
+}
+
+div#acount {
+	display: flex;
+	justify-content: center;
+}
+
+div#acount div {
+	margin: 10px;
+}
+
+div#acount div a {
+	background: linear-gradient(0deg, rgb(60, 155, 170), #fff);
+	border: 1px solid rgb(141, 137, 137);
+	color: rgb(14, 75, 129);
 	display: inline-block;
-	text-align: center;
-	margin-top: 10px;
-	color: #1a0d6d;
-}
-
-h2 {
-	color: #BDC3C7
-}
-
-.mrng-60-top {
-	margin-top: 60px;
-}
-
-a.animated-button:link,
-a.animated-button:visited {
-	position: relative;
-	display: block;
-	margin: 30px auto 0;
-	padding: 14px 15px;
-	color: #fff;
-	font-size: 14px;
-	font-weight: bold;
-	text-align: center;
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 500px;
+	font-size: 1.2rem;
+	font-weight: 700;
+	width: 170px;
+	height: 50px;
 	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	transition: all 200ms ease-in-out;
 }
 
-a.animated-button:link:after,
-a.animated-button:visited:after {
-	content: "";
-	position: absolute;
-	height: 0%;
-	left: 50%;
-	top: 50%;
-	width: 150%;
-	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
-}
-
-a.animated-button:link:hover,
-a.animated-button:visited:hover {
-	color: #FFF;
-	text-shadow: none;
-}
-
-a.animated-button:link:hover:after,
-a.animated-button:visited:hover:after {
-	height: 450%;
-}
-
-a.animated-button:link,
-a.animated-button:visited {
-	position: relative;
-	display: block;
-	margin: 30px auto 0;
-	padding: 14px 15px;
-	color: #fff;
-	font-size: 14px;
-	border-radius: 0;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-
-a.animated-button.thar-one {
-	color: #d31717;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 2px solid #181bf7;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-}
-
-a.animated-button.thar-one:hover {
-	color: #000 !important;
-	background-color: transparent;
-	text-shadow: none;
-}
-
-a.animated-button.thar-one:hover:before {
-	bottom: 0%;
-	top: auto;
-	height: 100%;
-}
-
-a.animated-button.thar-one:before {
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	height: 0px;
-	width: 100%;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background: #181bf7;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-}
-
-a.animated-button.thar-two {
-	color: #173dd3;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 2px solid #181bf7;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-}
-
-a.animated-button.thar-two:hover {
-	color: #000 !important;
-	background-color: transparent;
-	text-shadow: ntwo;
-}
-
-a.animated-button.thar-two:hover:before {
-	top: 0%;
-	bottom: auto;
-	height: 100%;
-}
-
-a.animated-button.thar-two:before {
-	display: block;
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	height: 0px;
-	width: 100%;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background: #181bf7;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-}
-
-a.animated-button.thar-three {
-	color: #173dd3;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 2px solid #181bf7;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
-}
-
-a.animated-button.thar-three:hover {
-	color: #000 !important;
-	background-color: transparent;
-	text-shadow: nthree;
-}
-
-a.animated-button.thar-three:hover:before {
-	left: 0%;
-	right: auto;
-	width: 100%;
-}
-
-a.animated-button.thar-three:before {
-	display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background: #181bf7;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
-}
-
-a.animated-button.thar-four {
-	color: #173dd3;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 2px solid #181bf7;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
-}
-
-a.animated-button.thar-four:hover {
-	color: #000 !important;
-	background-color: transparent;
-	text-shadow: nfour;
-}
-
-a.animated-button.thar-four:hover:before {
-	right: 0%;
-	left: auto;
-	width: 100%;
-}
-
-a.animated-button.thar-four:before {
-	display: block;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background: #181bf7;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+div#acount div a:hover {
+	color: rgb(172, 255, 255);
+	background: rgb(138, 148, 171);
+	letter-spacing: 0.5px;
 }

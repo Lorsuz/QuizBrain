@@ -1,68 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/index.css" type="text/css" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://designify.me/code-snippets/animated-buttons/css/btns.css" />
-    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' type='text/css' />
-    <title>Puzzle Game Official WebSite</title>
-  </head>
-
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="Algum link aqui">PuzzleGame 1.5 Demo</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://designify.me/tutorials/flat-buttons-with-animated-hover-effects/">Design feito por Designify.me</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="jumbotron text-center">
-      <div class="container">
-        <h1>Puzzle Game</h1>
-        <p style="color:#875">Puzzle Game, é um Quiz feito por estudantes do ensino médio do Instituto Federal de Pernambuco(IF-PE), com o intuito de ensinar pessoas com dificuldades em matérias como História, Matemática e Português! Dê Start no game e venha aprender conosco!</p>
-        <p style="color:#567">Se puder ajudar no desenvolvimento do jogo, em breve abriremos a opçãoo de doação no Patreon!
-          <a href="https://www.patreon.com/pt-BR/">https://www.patreon.com/pt-BR</a>
-        </p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-6">
-          <a href="static/php/game-front.php" class="btn btn-sm animated-button thar-one">Iniciar Game</a>
-        </div>
-
-        <div class="col-md-3 col-sm-3 col-xs-6">
-          <a href="static/php/login-front.php" class="btn btn-sm animated-button thar-two">Fazer Login</a>
-        </div>
-
-        <div class="col-md-3 col-sm-3 col-xs-6">
-          <a href="static/php/register-front.php" class="btn btn-sm animated-button thar-three">Criar conta</a>
-        </div>
-
-        <div class="col-md-3 col-sm-3 col-xs-6">
-          <a href="#" class="btn btn-sm animated-button thar-four">Mais Informações</a>
-        </div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  </body>
-
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="static/images/controle.png" type="image/x-icon">
+		<link rel="stylesheet" href="static/css/index.css" type="text/css">
+		<title>Puzzle Game Official WebSite</title>
+	</head>
+	<body>
+		<main>
+			<div id="aside-1">
+				<img src="static/images/controle.png" alt="">
+			</div>
+			<div id="aside-2">
+				<section>
+					<nav>
+						<a class="active" href="">Home</a>
+						<a href="">Sobre</a>
+						<a href="">Doação</a>
+						<a href="">Créditos</a>
+					</nav>
+					<div id="tittle">
+						<h1>Puzzle Game</h1>
+						<p>
+							Puzzle Game, é um Quiz feito por estudantes do ensino médio do Instituto Federal de Pernambuco(IF-PE), com o intuito de ensinar pessoas com dificuldades em matérias como História, Matemática e Português! Dê Start no game e venha aprender conosco!
+						</p>
+					</div>
+					<div id="acount">
+						<div>
+							<a href="static/php/users-table/login-screen.php">Fazer Login</a>
+						</div>
+						<div>
+							<a href="static/php/users-table/register-screen.php">Criar conta</a>
+						</div>
+					</div>
+				</section>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		</main>
+	</body>
 </html>
